@@ -8,7 +8,7 @@ import userRouter from "./routes/user.Router.js";
 import geminiResponse from "./gemini.js";
 const app = express();
 const port = process.env.PORT;
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://ai-assistant-kwtv.onrender.com", credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.use("/api/auth", authRouter);
