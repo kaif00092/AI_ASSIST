@@ -5,7 +5,7 @@ export const userDataContext = createContext();
 import axios from "axios";
 
 function UserContext({ children }) {
-  const serverUrl = "http://localhost:3001";
+  const serverUrl = "https://ai-assisst.onrender.com";
   const [userData, setUserData] = useState(null);
   const [frontendImage, setFrontendImage] = useState(null);
   const [backendImage, setBackendImage] = useState(null);
